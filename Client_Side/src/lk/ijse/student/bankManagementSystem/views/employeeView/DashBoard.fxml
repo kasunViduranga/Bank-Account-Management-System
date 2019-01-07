@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1039.0" prefWidth="1913.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.bankManagementSystem.controller.EmployeeDashBoard">
+   <children>
+      <AnchorPane prefHeight="38.0" prefWidth="1912.0" style="-fx-background-color: #C3C3C3; -fx-border-color: #C3C3C3;">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1838.0" layoutY="1.0" onMouseClicked="#minimise" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_Minimize_Window_64px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="38.0" prefHeight="1002.0" prefWidth="306.0" style="-fx-background-color: #1e88e5; -fx-border-color: #1e88e5;">
+         <children>
+            <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="3.0" layoutY="432.0" onMouseClicked="#depositeButtonIsClick" prefHeight="72.0" prefWidth="300.0" style="-fx-background-color: blue; -fx-border-color: white;" text="Transaction" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="3.0" layoutY="325.0" onMouseClicked="#openAccButtonIsClick" prefHeight="72.0" prefWidth="300.0" style="-fx-background-color: blue; -fx-border-color: white;" text="Open Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="16.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/loan.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="64.0" layoutX="8.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/hdi_004_bankinstructions.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="3.0" layoutY="643.0" onMouseClicked="#reportPaneLoad" prefHeight="72.0" prefWidth="300.0" style="-fx-background-color: blue; -fx-border-color: white;" text="Reports" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="16.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/Dream_Pad_Logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="172.0" fitWidth="195.0" layoutX="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/Bank.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="205.0" layoutX="50.0" layoutY="194.0" onMouseClicked="#homeButtonIsClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/home_button.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" defaultButton="true" layoutX="105.0" layoutY="850.0" onMouseClicked="#logOut" prefHeight="39.0" prefWidth="114.0" style="-fx-background-radius: 22; -fx-background-color: red;" text="     Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="38.0" fitWidth="30.0" layoutX="112.0" layoutY="855.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_Shutdown_104px.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="3.0" layoutY="538.0" onMouseClicked="#manageCustomerEvent" prefHeight="72.0" prefWidth="300.0" style="-fx-background-color: blue; -fx-border-color: white;" text="Manage Customer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="16.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/sign-up.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainDashBoard" layoutX="306.0" layoutY="130.0" prefHeight="906.0" prefWidth="1602.0" style="-fx-background-color: white; -fx-border-color: white;" />
+      <AnchorPane layoutX="306.0" layoutY="38.0" prefHeight="91.0" prefWidth="1607.0" style="-fx-background-color: blue; -fx-border-color: blue;">
+         <children>
+            <JFXTextField fx:id="txtDate" focusColor="#050516" layoutX="852.0" layoutY="16.0" prefHeight="50.0" prefWidth="230.0" unFocusColor="BLUE">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtTime" focusColor="#050516" layoutX="1135.0" layoutY="16.0" prefHeight="50.0" prefWidth="230.0" unFocusColor="BLUE">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

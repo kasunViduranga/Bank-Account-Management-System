@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-12-29T15:09:32 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="withdroAndDepoReport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="17afc9f6-1662-4a42-adb2-7a903276ca42">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select * from transaction]]>
+	</queryString>
+	<field name="tranId" class="java.lang.String"/>
+	<field name="accNum" class="java.lang.String"/>
+	<field name="tranDate" class="java.lang.String"/>
+	<field name="tranFee" class="java.lang.Double"/>
+	<field name="tranPersNIC" class="java.lang.String"/>
+	<field name="tranTime" class="java.lang.String"/>
+	<field name="tranType" class="java.lang.String"/>
+	<field name="customerAccountDetail_customer_cusID_PK" class="java.lang.String"/>
+	<field name="customerAccountDetail_account_accNum_PK" class="java.lang.String"/>
+	<group name="tranId">
+		<groupExpression><![CDATA[$F{tranId}]]></groupExpression>
+	</group>
+	<group name="accNum">
+		<groupExpression><![CDATA[$F{accNum}]]></groupExpression>
+	</group>
+	<group name="tranDate">
+		<groupExpression><![CDATA[$F{tranDate}]]></groupExpression>
+	</group>
+	<group name="tranFee">
+		<groupExpression><![CDATA[$F{tranFee}]]></groupExpression>
+	</group>
+	<group name="tranPersNIC">
+		<groupExpression><![CDATA[$F{tranPersNIC}]]></groupExpression>
+	</group>
+	<group name="tranTime">
+		<groupExpression><![CDATA[$F{tranTime}]]></groupExpression>
+	</group>
+	<group name="tranType">
+		<groupExpression><![CDATA[$F{tranType}]]></groupExpression>
+	</group>
+	<group name="customerAccountDetail_customer_cusID_PK">
+		<groupExpression><![CDATA[$F{customerAccountDetail_customer_cusID_PK}]]></groupExpression>
+	</group>
+	<group name="customerAccountDetail_account_accNum_PK">
+		<groupExpression><![CDATA[$F{customerAccountDetail_account_accNum_PK}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="190" y="10" width="380" height="47" forecolor="#FA0702" uuid="785a7759-a05c-42c4-8196-6ef672a6e3a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Money Deposite & withdraow Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="48" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="118" height="30" forecolor="#0D15FC" uuid="3fa1b40d-71ab-4b2f-abab-058004acbba9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="118" y="0" width="114" height="30" forecolor="#0D15FC" uuid="47e1f1fb-7ada-4301-8843-39eb04ebcdad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[account Num]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="232" y="0" width="114" height="30" forecolor="#0D15FC" uuid="c3015546-c382-48d1-9a4b-396db67e8afc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tranDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="346" y="0" width="114" height="30" forecolor="#0D15FC" uuid="3810ac17-0cb7-4a9f-bb9b-89b0e0fddb21"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fee (RS.)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="0" width="114" height="30" forecolor="#0D15FC" uuid="0fdc0afe-b88e-4aa5-95d2-d6724c579e76"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIC Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="574" y="0" width="114" height="30" forecolor="#0D15FC" uuid="c5155a87-6622-4191-84c7-289316bff680"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tran Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="688" y="0" width="114" height="30" forecolor="#0D15FC" uuid="320f73ed-1451-4c99-807a-86c02aa56b4d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tran Type]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="75" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="23" width="118" height="30" uuid="c8676732-62db-466d-8255-6d20a0dcf23e"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="23" width="114" height="30" uuid="79fc243f-2d6f-46cf-ad75-1cb83d094223"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accNum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="232" y="23" width="114" height="30" uuid="1ae5baab-7aa6-45e3-aa01-2b213f9611b6"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="346" y="23" width="114" height="30" uuid="bba0b1ee-0f89-423f-a751-62bd5ffb1f20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranFee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="23" width="114" height="30" uuid="c1b09423-d1f7-4cf3-82fd-4d3d68bac17c"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranPersNIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="574" y="23" width="114" height="30" uuid="ea572f30-e4c7-4bd4-907a-b4c76dc064d6"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="688" y="23" width="114" height="30" uuid="a28f2e69-ad14-4476-bdb7-fbd6c7161d1b"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranType}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

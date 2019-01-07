@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="Hibernate" type="hibernate">
+    <CLASSES>
+      <root url="jar://E:/SOFTWARE/java library/required/required/antlr-2.7.7.jar!/" />
+      <root url="jar://E:/SOFTWARE/java library/required/required/byte-buddy-1.8.17.jar!/" />
+      <root url="jar://E:/SOFTWARE/java library/required/required/classmate-1.3.4.jar!/" />
+      <root url="jar://E:/SOFTWARE/java library/required/required/dom4j-2.1.1.jar!/" />
+      <root url="jar://E:/SOFTWARE/java library/required/required/hibernate-commons-annotations-5.0.4.Final.jar!/" />
+      <root url="jar://E:/SOFTWARE/java library/required/required/hibernate-core-5.3.7.Final.jar!/" />
+      <root url="jar://E:/SOFTWARE/java library/required/required/jandex-2.0.5.Final.jar!/" />
+      <root url="jar://E:/SOFTWARE/java library/required/required/javassist-3.23.1-GA.jar!/" />
+      <root url="jar://E:/SOFTWARE/java library/required/required/javax.activation-api-1.2.0.jar!/" />
+      <root url="jar://E:/SOFTWARE/java library/required/required/javax.persistence-api-2.2.jar!/" />
+      <root url="jar://E:/SOFTWARE/java library/required/required/jboss-logging-3.3.2.Final.jar!/" />
+      <root url="jar://E:/SOFTWARE/java library/required/required/jboss-transaction-api_1.2_spec-1.1.1.Final.jar!/" />
+      <root url="jar://E:/SOFTWARE/java library/required/required/mysql-connector-java-5.1.47.jar!/" />
+      <root url="jar://E:/SOFTWARE/jfoenix/sanu-japeprsoft/com.lowagie.text-2.1.7.jar!/" />
+      <root url="jar://E:/SOFTWARE/jfoenix/sanu-japeprsoft/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://E:/SOFTWARE/jfoenix/sanu-japeprsoft/commons-digester-2.1.jar!/" />
+      <root url="jar://E:/SOFTWARE/jfoenix/sanu-japeprsoft/itextpdf-5.3.4.jar!/" />
+      <root url="jar://E:/SOFTWARE/jfoenix/sanu-japeprsoft/jasperreports-6.4.3.jar!/" />
+      <root url="jar://E:/SOFTWARE/jfoenix/sanu-japeprsoft/jasperreports-javaflow-6.4.3.jar!/" />
+      <root url="jar://E:/SOFTWARE/jfoenix/sanu-japeprsoft/jcommon-1.0.8.jar!/" />
+      <root url="jar://E:/SOFTWARE/jfoenix/sanu-japeprsoft/jfreechart-1.0.13.jar!/" />
+      <root url="jar://E:/SOFTWARE/jfoenix/sanu-japeprsoft/org-apache-commons-logging.jar!/" />
+      <root url="jar://E:/SOFTWARE/jfoenix/sanu-japeprsoft/org.apache.commons.collections.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/SOFTWARE/jfoenix/sanu-japeprsoft/itext-2.1.7-src.jar!/" />
+    </SOURCES>
+  </library>
+</component>

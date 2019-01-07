@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="906.0" prefWidth="1602.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.bankManagementSystem.controller.ReportPageController">
+   <children>
+      <Pane layoutX="406.0" layoutY="43.0" prefHeight="51.0" prefWidth="798.0" style="-fx-background-color: #7bd119; -fx-background-radius: 22;">
+         <children>
+            <ImageView fitHeight="569.0" fitWidth="917.0" layoutX="-2.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/market-research.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="334.0" layoutY="5.0" prefHeight="42.0" prefWidth="130.0" text="Reports" underline="true">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton layoutX="234.0" layoutY="408.0" onMouseClicked="#loadCustomerDetailsReport" prefHeight="42.0" prefWidth="319.0" style="-fx-background-color: #711fba; -fx-background-radius: 22; -fx-border-color: black; -fx-border-radius: 22;" text="Customer Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="969.0" layoutY="263.0" onMouseClicked="#loadAccountReport" prefHeight="42.0" prefWidth="319.0" style="-fx-background-color: #711fba; -fx-background-radius: 22; -fx-border-color: black; -fx-border-radius: 22;" text="Account Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="969.0" layoutY="400.0" onMouseClicked="#loadMoneyWithdrawDetailsReport" prefHeight="42.0" prefWidth="319.0" style="-fx-background-color: #711fba; -fx-background-radius: 22; -fx-border-color: black; -fx-border-radius: 22;" text="Transaction details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="234.0" layoutY="263.0" onMouseClicked="#loadAccTypeDetailsReport" prefHeight="42.0" prefWidth="319.0" style="-fx-background-color: #711fba; -fx-background-radius: 22; -fx-border-color: black; -fx-border-radius: 22;" text="Account Type Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

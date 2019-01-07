@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-12-29T14:52:47 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="accoutTypeReport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e3b33930-2ec6-4bca-8b95-c3ef69f979d1">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select * from accounttype]]>
+	</queryString>
+	<field name="accTypeID_PK" class="java.lang.String"/>
+	<field name="accType" class="java.lang.String"/>
+	<field name="countOfOwners" class="java.lang.Integer"/>
+	<field name="minAmouOf1stDep" class="java.lang.Double"/>
+	<field name="rate" class="java.lang.Double"/>
+	<group name="accTypeID_PK">
+		<groupExpression><![CDATA[$F{accTypeID_PK}]]></groupExpression>
+	</group>
+	<group name="accType">
+		<groupExpression><![CDATA[$F{accType}]]></groupExpression>
+	</group>
+	<group name="countOfOwners">
+		<groupExpression><![CDATA[$F{countOfOwners}]]></groupExpression>
+	</group>
+	<group name="minAmouOf1stDep">
+		<groupExpression><![CDATA[$F{minAmouOf1stDep}]]></groupExpression>
+	</group>
+	<group name="rate">
+		<groupExpression><![CDATA[$F{rate}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="260" y="10" width="240" height="30" forecolor="#FA0C07" uuid="2fb2bada-3046-4138-b356-03db4054b4bf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Account Type Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="162" height="30" forecolor="#0D05F0" uuid="c04797f0-f738-4701-a49a-ff7e5b3eaf86"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Acc Type ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="0" width="160" height="30" forecolor="#0D05F0" uuid="c660ad9f-5847-40fa-a121-fb3362944808"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Acc Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="0" width="160" height="30" forecolor="#0D05F0" uuid="3aa6ccd0-9073-4123-a420-110a3c71017f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Count of Owners]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="482" y="0" width="160" height="30" forecolor="#0D05F0" uuid="b90a3550-dc5f-49d1-850a-f7d20867c16b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Min Amount of 1st Dep]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="642" y="0" width="160" height="30" forecolor="#0D05F0" uuid="ff189cd5-e806-41ce-8fde-610063efa3a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Interest]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="58" splitType="Stretch">
+			<textField>
+				<reportElement x="-2" y="18" width="162" height="30" uuid="a7eecce4-c062-49f2-b83b-20817372bf3f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{accTypeID_PK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="18" width="160" height="30" uuid="7859513e-3b7c-4058-9292-20ec0381d986"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{accType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="18" width="160" height="30" uuid="54133a13-db4e-438d-82bc-937240540c16"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{countOfOwners}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="18" width="160" height="30" uuid="fd4e1dcf-fb45-480c-acbf-0b93c2f5102b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{minAmouOf1stDep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="18" width="160" height="30" uuid="13c46aeb-ac3d-467a-9477-82754b11a35d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
